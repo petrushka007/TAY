@@ -4,27 +4,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SmartOptiLight</title>
 <link rel="stylesheet" href="стили для первой.css">
-<link rel="icon" href="photo_2023-12-07_19-51-25.jpg" type="image/x-icon">
-</head>
-<body>
-<div id="toolbar">
-  <div id="logo-and-links">
-      <img id="logo" src="photo_2023-12-07_19-51-25.jpg" alt="Логотип">
+<link rel="icon" href="photo_2023-12-07_19-51-25.png" type="image/x-icon">
+</head> 
+<header>
+  <div class="wrap-logo">
+      <img class="img-responsive" src="photo_2023-12-07_19-51-25.png" alt="Логотип">
       <div id="links">
+      </div>
+      <nav>
           <a href="первая страница.html">SmartOptiLight</a>
           <a href="функции.html">О продукте</a>
-          <a href="функции.html">Партнёры</a>
+          <a href="партнёры.html">Будущее</a>
           <a href="о нас.html">О нас</a>
-      </div>
-  </div>
-</div>
+      </nav>
+</header>
+<body>
+  <div class="container-fluid">
+    <div class="background">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+     <div class="cube"></div>
 <div id="main-img">
   <div id="image">
     <img src="a50242b5-9ae6-4889-8b8a-408c55a02015.png" alt="Описание изображения">
   </div>
   <div id="text">
-    <h1>ДОБРО ПОЖАЛОВАТЬ!</h1>
-      <p>Часто случается такое, что вы ложитесь спать и забываете выключить свет, а в конце у вас огромныет счета за электроэнергию?<br>У вас часто случается, что будильник срабатывает, а вы его не слышите или вы ложитесь на 5 минут и просыпаетесь через пять часов?<br>Вы часто смотрите на ночь телевизор или пользуетесь компьютером, а вскоре после этого у вас краснеют глаза и начинаю болеть?</p>
+    <section class="header-content">
+      <h1>ДОБРО ПОЖАЛОВАТЬ!</h1>
+        <p>Часто случается такое, что вы ложитесь спать и забываете выключить свет, а в конце у вас огромныет счета за электроэнергию?<br>У вас часто случается, что будильник срабатывает, а вы его не слышите или вы ложитесь на 5 минут и просыпаетесь через пять часов?<br>Вы часто смотрите на ночь телевизор или пользуетесь компьютером, а вскоре после этого у вас краснеют глаза и начинаю болеть?</p>
   </div>
 </div>
 <div id="main">
@@ -48,9 +57,25 @@
 <p>Почувствуйте удобство и сэкономьте энергию с помощью SmartOptiLight – вашего надежного компаньона в создании умного и энергоэффективного дома. Переходите в эру интеллектуальных решений сегодня!"</p>
  
 </div>
-<div id="footer">
-  &copy; 2023 Красивый Сайт
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Информация</h6>
+        <p class="text-justify">Все персонажи вымышлены, любое сходство с реальными людьми случайно!</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by Слоняры
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 <script>
   let lastScrollTop = 0;
 
@@ -65,6 +90,15 @@
 
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
+  function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            var isOpened = dropdownContent.style.display === "block";
+            dropdownContent.style.display = isOpened ? "none" : "block";
+            if (!isOpened) {
+                document.body.scrollTop = document.body.scrollHeight;
+                document.documentElement.scrollTop = document.documentElement.scrollHeight;
+            }
+        }
 </script>
 </body>
 </html>
