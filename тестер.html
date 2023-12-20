@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            opacity: 0;
+            animation: fadeInCell 1s forwards;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInCell {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Таблица с информацией</title>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Параметр</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Инфракрасный (ИК) датчик движения</td>
+            <td>Этот датчик использует инфракрасные лучи для обнаружения теплового излучения от объектов, таких как человек.</td>
+        </tr>
+        <tr>
+            <td>Осветительные и звуковые системы</td>
+            <td>Датчик может включать в себя светодиоды или другие источники света, которые активируются при обнаружении движения. Звуковые системы могут воспроизводить аудиоэффекты или записанные сообщения для привлечения внимания.</td>
+        </tr>
+        <tr>
+            <td>Таймеры и часы реального времени</td>
+            <td>Для управления временными параметрами, такими как длительность работы света или активация рекламы в определенные часы, могут использоваться таймеры или часы реального времени.</td>
+        </tr>
+        <tr>
+            <td>Датчик освещенности</td>
+            <td>Датчик освещенности может определять текущий уровень освещения вокруг, что позволяет датчику реагировать на окружающие условия.</td>
+        </tr>
+        <tr>
+            <td>Модуль беспроводной связи</td>
+            <td>Датчик может быть оборудован модулем беспроводной связи для удаленного управления и мониторинга.</td>
+        </tr>
+        <tr>
+            <td>Блок питания</td>
+            <td>Источник питания, такой как батареи или подключение к электросети, обеспечивает энергию для работы датчика.</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
