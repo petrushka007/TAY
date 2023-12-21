@@ -240,6 +240,7 @@ html {
 
 .container {
   padding: 0 16px;
+  height: 400px;
 }
 
 .container::after, .row::after {
