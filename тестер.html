@@ -1,89 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 16px;
-            overflow: hidden;
-            animation: fadeIn 1s ease-in-out;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
 
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-            opacity: 0;
-            animation: fadeInCell 1s forwards;
-        }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-        th {
-            background-color: #f2f2f2;
-        }
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-        tr:hover {
-            background-color: #f5f5f5;
-        }
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
-        @keyframes fadeInCell {
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
-    <title>Таблица с информацией</title>
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
 </head>
 <body>
 
-<table>
-    <thead>
-        <tr>
-            <th>Идите н</th>
-            <th>Описание</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Инфракрасный (ИК) датчик движения</td>
-            <td>Этот датчик использует инфракрасные лучи для обнаружения теплового излучения от объектов, таких как человек.</td>
-        </tr>
-        <tr>
-            <td>Осветительные и звуковые системы</td>
-            <td>Датчик может включать в себя светодиоды или другие источники света, которые активируются при обнаружении движения. Звуковые системы могут воспроизводить аудиоэффекты или записанные сообщения для привлечения внимания.</td>
-        </tr>
-        <tr>
-            <td>Таймеры и часы реального времени</td>
-            <td>Для управления временными параметрами, такими как длительность работы света или активация рекламы в определенные часы, могут использоваться таймеры или часы реального времени.</td>
-        </tr>
-        <tr>
-            <td>Датчик освещенности</td>
-            <td>Датчик освещенности может определять текущий уровень освещения вокруг, что позволяет датчику реагировать на окружающие условия.</td>
-        </tr>
-        <tr>
-            <td>Модуль беспроводной связи</td>
-            <td>Датчик может быть оборудован модулем беспроводной связи для удаленного управления и мониторинга.</td>
-        </tr>
-        <tr>
-            <td>Блок питания</td>
-            <td>Источник питания, такой как батареи или подключение к электросети, обеспечивает энергию для работы датчика.</td>
-        </tr>
-    </tbody>
-</table>
+<h2>Responsive "Meet The Team" Section</h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>HTML CSS</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
