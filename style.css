@@ -276,10 +276,10 @@ html {
   background-color: #555;
 }
 iframe {
-  width: 1050px;
+  width: 60%;
   margin: 0 auto; 
   display: block; 
-  
+  border-radius: 30px;
 }
 hr {
   border: none;
