@@ -29,8 +29,9 @@
 <div id="main">
     <h1>Что же представляет собой наш продукт?</h1>
     <img class="centered-image" src="IMG_20240105_140330_488.jpg" alt="Логотип">
+    <dropdown>
     <div class="dropdown1">
-        <button class="dropdown-btn" onclick="toggleDropdown('dropdown1')">Из чего состоит наш продукт</button>
+        <button class="dropdown-btn button" onclick="toggleDropdown('dropdown1')">Из чего состоит наш продукт</button>
         <div class="dropdown-content left" id="dropdown1">
             <ul>
                 <li style="color: #000000"><strong>Инфракрасный (ИК) датчик движения:</strong> Этот датчик использует инфракрасные лучи для обнаружения теплового излучения от объектов, таких как человек.</li>
@@ -44,7 +45,7 @@
     </div>
 
     <div class="dropdown2">
-        <button class="dropdown-btn" onclick="toggleDropdown('dropdown2')">Функции</button>
+        <button class="dropdown-btn button" onclick="toggleDropdown('dropdown2')">Функции</button>
         <div class="dropdown-content right" id="dropdown2">
             <ul>
                 <li style="color: #000000"><strong>Управления освещением:</strong> При обнаружении движения, датчик может автоматически включить свет в комнате. После истечения времени без движения, свет может автоматически выключиться для экономии энергии.</li>
@@ -55,6 +56,7 @@
                </ul>
         </div>
     </div>
+</dropdown>
     <table>
         <thead>
             <tr>

@@ -150,6 +150,17 @@ body {
   .dropdown-content.right {
   right: 0; 
   }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .button:hover {
+    background: linear-gradient(132deg, #9950bb,#a8d7e0);
+  }
   @keyframes fadeIn {
   from {
       opacity: 0;
