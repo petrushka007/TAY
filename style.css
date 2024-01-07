@@ -275,6 +275,10 @@ html {
 .button:hover {
   background-color: #555;
 }
+.button a {
+  user-select: none;
+}
+
 iframe {
   width: 60%;
   margin: 0 auto; 
